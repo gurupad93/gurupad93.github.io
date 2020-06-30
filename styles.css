@@ -1,0 +1,63 @@
+body {
+    background-color: black;
+    background-image: radial-gradient(
+        rgba(129, 136, 129, 0.75)
+    );
+    height: 100vh;
+    color: white;
+    opacity: 0.8;
+}
+
+.mainName {
+    font: 1.3rem Inconsolata, monospace;
+    /* padding-top: 15px; */
+    text-align: center;
+}
+.subtitle {
+    font: 1.1rem Inconsolata, monospace;
+    padding-top: 20px;
+    text-align: center;
+}
+.all {
+    text-align: center;
+    padding-top: 20px;
+}
+::placeholder {
+    color: white;
+    opacity: 0.4;
+    font: 0.9rem Inconsolata, monospace;
+}
+input:focus {
+    outline:none;
+}
+.card {
+    font: 1.1rem Inconsolata, monospace;
+    background-color: black;
+}
+#aboutme {
+    text-align: center;
+    padding-top: 1000px;
+}
+#opt {
+    color:white; 
+    background-color:transparent;
+    border:none;
+}
+#aboutmeCardDiv {
+    font: 1.0rem Inconsolata, monospace;
+}
+.v1 {
+    border-right: 1px solid white;
+    height: 550px;
+    /* padding-top: 50px; */
+    /* pad?ding-right: 2%; */
+    text-align: right;
+}
+.social {
+    padding-top: 250px;
+}
+li {
+    /* background: slategrey; */
+    display: inline-block;
+    padding: 10px;
+}
