@@ -48,7 +48,7 @@ input:focus {
 }
 .v1 {
     border-right: 1px solid white;
-    height: 550px;
+    /* height: 550px; */
     /* padding-top: 50px; */
     /* pad?ding-right: 2%; */
     text-align: right;
