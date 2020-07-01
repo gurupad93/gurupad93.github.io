@@ -14,12 +14,15 @@ function search(ele) {
 
 $('#aboutmeLink').on('click', function(){
     $('#aboutmeCollapse').collapse('toggle');
+    setTimeout(function(){ document.getElementById('aboutmeDiv').scrollIntoView({behavior: "smooth"}); }, 300);
 });
 $('#educationLink').on('click', function(){
     $('#educationCollapse').collapse('toggle');
+    setTimeout(function(){ document.getElementById('educationCardDiv').scrollIntoView({behavior: "smooth"}); }, 300);
 });
 $('#experienceLink').on('click', function(){
     $('#experienceCollapse').collapse('toggle');
+    setTimeout(function(){ document.getElementById('experienceCardDiv').scrollIntoView({behavior: "smooth"}); }, 300);
 });
 
 $('#aboutmeCollapse').on('show.bs.collapse', function () {

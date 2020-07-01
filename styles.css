@@ -6,6 +6,7 @@ body {
     height: 100vh;
     color: rgb(230, 225, 225);
     opacity: 0.6;
+    overflow: hidden;
 }
 
 .mainName {
