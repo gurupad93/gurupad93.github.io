@@ -1,8 +1,14 @@
 function search(ele) {
     if(event.key === 'Enter') {
-        $('input').hide();
-        $('#car').hide();
-        $('#mainCollapse').collapse('show');
+        var entered = $('input').val().toLowerCase();
+        if(entered == 'ls'){
+            $('#errorMsg').hide();
+            $('input').hide();
+            $('#car').hide();
+            $('#mainCollapse').collapse('show');
+        } else {
+            $('#errorMsg').show();
+        }
     }
 }
 
