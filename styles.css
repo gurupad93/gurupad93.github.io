@@ -4,8 +4,8 @@ body {
         rgba(129, 136, 129, 0.75)
     );
     height: 100vh;
-    color: white;
-    opacity: 0.8;
+    color: rgb(230, 225, 225);
+    opacity: 0.6;
 }
 
 .mainName {
