@@ -37,7 +37,7 @@
         <p>cogito, ergo sum!</p>
     </div>
     <div class="container all">
-        <span id="car">&#8250;</span>            
+        <span class="blink" id="car">&#8250;</span>            
         <input type="text" id="opt" onkeydown="search(this)" placeholder="type ls for options">
         <div id="errorMsg" style="display: none;">
             <br/>
@@ -45,19 +45,50 @@
         </div>
         <div class="collapse" id="mainCollapse">
             <div class="card card-body">
-                <p><a id="aboutmeLink" style="color:#007bff;">+ About me</a></p>
+                <p><a id="aboutmeLink" class="sp" style="color:#007bff;">+ About me</a></p>
                     <div class="collapse" id="aboutmeCollapse">
-                        <div class="card card-body" id="aboutmeCardDiv">
+                        <div class="sp card card-body" id="aboutmeCardDiv">
                             <p>
-                                Hello, I am a software developer from India. <br>
+                                I am a software developer from India.<br>
                                 Erros are the extra features we don't want!
                             </p>
                         </div>    
                     </div>
-                <p><a style="color:#007bff;">+ Projects</a></p>
-                <p><a id="educationLink" style="color:#007bff;">+ Education</a></p>
+                <p><a id="projectsLink" class="sp" style="color:#007bff;">+ Projects</a></p>
+                    <div class="collapse" id="projectsCollapse">
+                        <div class="spp card card-body" id="projectsCardDiv">
+                            <div class="row">
+                                <div class="col-md-6 col-sm-6 col-6 v1">
+                                    <a href="https://github.com/gurupad93/BitcoinSimulator#bitcoinsimulator" style="color:green">Bitcoin Simulator</a> >>
+                                    <br/><br/><br/><br/>
+                                    Implemented Fibonacci Heap<br>in C++
+                                    <br/><br/><br/>
+                                    <a href="https://github.com/gurupad93/ClassifyCloud" style="color:green">ClassifyCloud</a> >>
+                                    <br/><br/><br/><br/><br/>
+                                    Developed an Intranet web forum <br>application at ISAC<br>
+                                    Technologies used: Struts2, Java
+                                    <br/><br/><br/>
+                                    <a href="https://github.com/gurupad93/Gossip-Simulator" style="color:green">Gossip Protocol Simulator</a> >>
+                                </div>
+                                <div class="col-md-6 col-sm-6 col-6" style="text-align: left;">
+                                    Simualation of Bitcoin/Blockchain system<br>
+                                    Technologies used: JS, Phoenix framework, Elixir
+                                    <br/><br/><br/>
+                                    << <a href="https://github.com/gurupad93/Fibonacci-Heap-Implementation-in-C-" style="color:green">Fibonacci Heap Implementation</a>
+                                    <br/><br/><br/><br/>
+                                    Classify Images using a deep learning<br>model and AWS cloud<br>
+                                    Technologies used: Java, Python, Shell Scripting, AWS
+                                    <br/><br/><br/>
+                                    << <span style="color:green;">Intranet Web Forum</span>
+                                    <br/><br/><br/><br/><br/>
+                                    Determines convergence of Gossip and push sum protocols<br>Developed using Elixir
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                <p><a id="educationLink" class="sp" style="color:#007bff;">+ Education</a></p>
                     <div class="collapse" id="educationCollapse">
-                        <div class="card card-body" id="educationCardDiv">
+                        <div class="sp card card-body" id="educationCardDiv">
                             <div class="row">
                                 <div class="col-md-6 col-sm-6 col-6 v1">
                                     <span style="color:green;"><b>Masters</b></span> >>
@@ -88,9 +119,9 @@
                             </div>
                         </div>    
                     </div>
-                <p><a id="experienceLink" style="color:#007bff;">+ Experience</a></p>
+                <p><a id="experienceLink" class="sp" style="color:#007bff;">+ Experience</a></p>
                     <div class="collapse" id="experienceCollapse">
-                        <div class="card card-body" id="experienceCardDiv">
+                        <div class="sp card card-body" id="experienceCardDiv">
                             <div class="row">
                                 <div class="col-md-6 col-sm-6 col-6 v1">
                                     <span style="color:green;"><b>2019 Aug - 2020 Jan</b></span> >>
@@ -120,7 +151,7 @@
                             </div>
                         </div>
                     </div>
-                <p><a target="_blank" href="Gurupad_hegde.pdf" download>Resume</a></p>
+                <p><a target="_blank" class="sp" href="Gurupad_hegde.pdf" download>Resume</a></p>
             </div>
         </div>
     </div>

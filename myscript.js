@@ -24,12 +24,22 @@ $('#experienceLink').on('click', function(){
     $('#experienceCollapse').collapse('toggle');
     setTimeout(function(){ document.getElementById('experienceCardDiv').scrollIntoView({behavior: "smooth"}); }, 300);
 });
+$('#projectsLink').on('click', function(){
+    $('#projectsCollapse').collapse('toggle');
+    setTimeout(function(){ document.getElementById('projectsCardDiv').scrollIntoView({behavior: "smooth"}); }, 300);
+});
 
 $('#aboutmeCollapse').on('show.bs.collapse', function () {
     $('#aboutmeLink').text('- About me');
 });
 $('#aboutmeCollapse').on('hidden.bs.collapse', function () {
     $('#aboutmeLink').text('+ About me');
+});
+$('#projectsCollapse').on('show.bs.collapse', function () {
+    $('#projectsLink').text('- Projects');
+});
+$('#projectsCollapse').on('hidden.bs.collapse', function () {
+    $('#projectsLink').text('+ Projects');
 });
 $('#educationCollapse').on('show.bs.collapse', function () {
     $('#educationLink').text('- Education');

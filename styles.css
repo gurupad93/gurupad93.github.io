@@ -8,6 +8,14 @@ body {
     opacity: 0.6;
     overflow: auto;
 }
+.blink{
+    animation: blinker 0.9s linear infinite;
+}
+@keyframes blinker {
+    50% {
+      opacity: 0;
+    }
+  }
 
 .mainName {
     font: 1.3rem Inconsolata, monospace;
@@ -32,8 +40,13 @@ input:focus {
     outline:none;
 }
 .card {
-    font: 1.1rem Inconsolata, monospace;
     background-color: black;
+}
+.sp {
+    font: 1.1rem Inconsolata, monospace;
+}
+.spp {
+    font: 0.9rem Inconsolata, monospace;
 }
 #aboutme {
     text-align: center;
