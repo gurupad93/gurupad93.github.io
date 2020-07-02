@@ -1,14 +1,87 @@
 function search(ele) {
     if(event.key === 'Enter') {
-        var entered = $('input').val().toLowerCase();
+        var entered = $('#opt').val().toLowerCase();
         if(entered == 'ls'){
             $('#errorMsg').hide();
-            $('input').hide();
+            $('#opt').hide();
             $('#car').hide();
             $('#mainCollapse').collapse('show');
         } else {
             $('#errorMsg').show();
         }
+    }
+}
+
+function showcc(){
+    $('#cce').val('');
+    $('.all').hide();
+    $('#cc').show();
+    $('#cce').focus();
+    setTimeout(function(){ document.getElementById('cc').scrollIntoView({behavior: "smooth"}); }, 300);
+}
+
+function showbs(){
+    $('#bse').val('');
+    $('.all').hide();
+    $('#bs').show();
+    $('#bse').focus();
+    setTimeout(function(){ document.getElementById('bs').scrollIntoView({behavior: "smooth"}); }, 300);
+}
+
+function showgp(){
+    $('#gpe').val('');
+    $('.all').hide();
+    $('#gp').show();
+    $('#gpe').focus();
+    setTimeout(function(){ document.getElementById('gp').scrollIntoView({behavior: "smooth"}); }, 300);
+}
+
+function showfh(){
+    $('#fhe').val('');
+    $('.all').hide();
+    $('#fh').show();
+    $('#fhe').focus();
+    setTimeout(function(){ document.getElementById('fh').scrollIntoView({behavior: "smooth"}); }, 300);
+}
+
+function showiwf(){
+    $('#iwfe').val('');
+    $('.all').hide();
+    $('#iwf').show();
+    $('#iwfe').focus();
+    setTimeout(function(){ document.getElementById('iwf').scrollIntoView({behavior: "smooth"}); }, 300);
+}
+
+function bsexit(ele) {
+    if(event.key === 'Enter') {
+        $('#bs').hide();
+        $('.all').show();
+    }
+}
+function ccexit(ele) {
+    if(event.key === 'Enter') {
+        $('#cc').hide();
+        $('.all').show();
+    }
+}
+
+function gpexit(ele) {
+    if(event.key === 'Enter') {
+        $('#gp').hide();
+        $('.all').show();
+    }
+}
+function iwfexit(ele) {
+    if(event.key === 'Enter') {
+        $('#iwf').hide();
+        $('.all').show();
+    }
+}
+
+function fhexit(ele) {
+    if(event.key === 'Enter') {
+        $('#fh').hide();
+        $('.all').show();
     }
 }
 

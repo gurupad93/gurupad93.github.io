@@ -11,6 +11,10 @@ body {
 .blink{
     animation: blinker 0.9s linear infinite;
 }
+
+br {
+    display: inline-block;
+}
 @keyframes blinker {
     50% {
       opacity: 0;
@@ -52,7 +56,7 @@ input:focus {
     text-align: center;
     padding-top: 1000px;
 }
-#opt {
+#opt{
     color:white; 
     background-color:transparent;
     border:none;
@@ -79,4 +83,27 @@ li {
 #errorMsg {
     font: 0.9rem Inconsolata, monospace;
     color: red;
+}
+
+#gpe, #bse , #cce, #fhe, #iwfe {
+    color:white; 
+    background-color:transparent;
+    border:none;
+}
+
+#gp, #bs , #cc, #fh, #iwf {
+    text-align: center;
+    padding-top: 20px;
+    font: 0.9rem Inconsolata, monospace;
+}
+
+.nameTag {
+    padding-right:10%;   
+}
+
+.name {
+    padding-right: 5%;
+}
+.descTag {
+    padding-right: 10em;
 }

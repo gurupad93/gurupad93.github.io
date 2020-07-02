@@ -43,7 +43,7 @@
     </div>
     <div class="container all">
         <span class="blink" id="car">&#8250;</span>            
-        <input type="text" id="opt" onkeydown="search(this)" placeholder="type ls for options">
+        <input type="text" id="opt" onkeydown="search(this)" placeholder="type ls for options" autofocus="autofocus">
         <div id="errorMsg" style="display: none;">
             <br/>
             Wrong Command! Type ls and then enter!
@@ -61,8 +61,8 @@
                     </div>
                 <p><a id="projectsLink" class="sp" style="color:#007bff;">+ Projects</a></p>
                     <div class="collapse" id="projectsCollapse">
-                        <div class="spp card card-body" id="projectsCardDiv">
-                            <div class="row">
+                        <div class="sp card card-body" id="projectsCardDiv">
+                            <!-- <div class="row">
                                 <div class="col-md-6 col-sm-6 col-6 v1">
                                     <a href="https://github.com/gurupad93/BitcoinSimulator#bitcoinsimulator" style="color:green">Bitcoin Simulator</a> >>
                                     <br/><br/><br/><br/>
@@ -88,7 +88,12 @@
                                     <br/><br/><br/><br/><br/>
                                     Determines convergence of Gossip and push sum protocols<br>Developed using Elixir
                                 </div>
-                            </div>
+                            </div> -->
+                            <a onclick="showbs()" style="color:green">Bitcoin Simulator</a>
+                            <a onclick="showcc()" style="color:green">ClassifyCloud</a>
+                            <a onclick="showgp()" style="color:green">Gossip Protocol Simulator</a>
+                            <a onclick="showfh()" style="color:green">Fibonacci Heap Implementation</a>
+                            <a onclick="showiwf()" style="color:green">Intranet web forum</a>
                         </div>
                     </div>
                 <p><a id="educationLink" class="sp" style="color:#007bff;">+ Education</a></p>
@@ -159,6 +164,138 @@
                 <p><a target="_blank" class="sp" href="Gurupad_hegde.pdf" download>Resume</a></p>
             </div>
         </div>
+    </div>
+    <div id="bs" style="display: none;">
+            <div class="row">
+                <div class="col-6 col-md-6" style="text-align: end;">
+                    <b>Name:</b>
+                </div>
+                <div class="col-6 col-md-6"></div>
+            </div>
+            <div class="row">
+                <div class="col-6 col-md-6"></div>               
+                <div class="col-6 col-md-6" style="text-align: left;">BitCoin Simulator</div>
+            </div>
+            <div class="row">
+                <div class="col-6 col-md-6" style="text-align: end;">
+                    <b>Description:</b>
+                </div>
+                <div class="col-6 col-md-6"></div>
+            </div>
+            <div class="row">
+                <div class="col-6 col-md-6"></div>               
+                <div class="col-6 col-md-6" style="text-align: left;">
+                    Simualation of Bitcoin/Blockchain system<br>
+                    Technologies used: JS, Phoenix framework, Elixir<br>
+                    <a href="https://github.com/gurupad93/BitcoinSimulator#bitcoinsimulator">Link</a>
+                </div>
+            </div>
+            <input type="text" id="bse" onkeydown="bsexit(this)" placeholder=":press q to exit"/>
+    </div>
+    <div id="cc" style="display: none;">
+        <div class="row">
+            <div class="col-6 col-md-6" style="text-align: end;">
+                <b>Name:</b>
+            </div>
+            <div class="col-6 col-md-6"></div>
+        </div>
+        <div class="row">
+            <div class="col-6 col-md-6"></div>               
+            <div class="col-6 col-md-6" style="text-align: left;">ClassifyCloud</div>
+        </div>
+        <div class="row">
+            <div class="col-6 col-md-6" style="text-align: end;">
+                <b>Description:</b>
+            </div>
+            <div class="col-6 col-md-6"></div>
+        </div>
+        <div class="row">
+            <div class="col-6 col-md-6"></div>               
+            <div class="col-6 col-md-6" style="text-align: left;">
+                Classify Images using a deep learning<br>model and AWS cloud<br>
+                Technologies used: Java, Python, Shell Scripting, AWS<br>
+                <a href="https://github.com/gurupad93/ClassifyCloud">Link</a>
+            </div>
+        </div>
+        <input type="text" id="cce" onkeydown="ccexit(this)" placeholder=":press q to exit"/>
+    </div>
+    <div id="gp" style="display: none;">
+        <div class="row">
+            <div class="col-6 col-md-6" style="text-align: end;">
+                <b>Name:</b>
+            </div>
+            <div class="col-6 col-md-6"></div>
+        </div>
+        <div class="row">
+            <div class="col-6 col-md-6"></div>               
+            <div class="col-6 col-md-6" style="text-align: left;">Gossip Protocol Simulator</div>
+        </div>
+        <div class="row">
+            <div class="col-6 col-md-6" style="text-align: end;">
+                <b>Description:</b>
+            </div>
+            <div class="col-6 col-md-6"></div>
+        </div>
+        <div class="row">
+            <div class="col-6 col-md-6"></div>               
+            <div class="col-6 col-md-6" style="text-align: left;">
+                Determines convergence of Gossip and push sum protocols<br>Developed using Elixir<br>
+                <a href="https://github.com/gurupad93/Gossip-Simulator">Link</a>
+            </div>
+        </div>
+        <input type="text" id="gpe" onkeydown="gpexit(this)" placeholder=":press q to exit"/>
+    </div>
+    <div id="fh" style="display: none;">
+        <div class="row">
+            <div class="col-6 col-md-6" style="text-align: end;">
+                <b>Name:</b>
+            </div>
+            <div class="col-6 col-md-6"></div>
+        </div>
+        <div class="row">
+            <div class="col-6 col-md-6"></div>               
+            <div class="col-6 col-md-6" style="text-align: left;">Fibonacci Heap Implementation</div>
+        </div>
+        <div class="row">
+            <div class="col-6 col-md-6" style="text-align: end;">
+                <b>Description:</b>
+            </div>
+            <div class="col-6 col-md-6"></div>
+        </div>
+        <div class="row">
+            <div class="col-6 col-md-6"></div>               
+            <div class="col-6 col-md-6" style="text-align: left;">
+                Implemented Fibonacci Heap in C++<br>
+                <a href="https://github.com/gurupad93/Fibonacci-Heap-Implementation-in-C-">Link</a>
+            </div>
+        </div>
+        <input type="text" id="fhe" onkeydown="fhexit(this)" placeholder=":press q to exit"/>
+    </div>
+    <div id="iwf" style="display: none;">
+        <div class="row">
+            <div class="col-6 col-md-6" style="text-align: end;">
+                <b>Name:</b>
+            </div>
+            <div class="col-6 col-md-6"></div>
+        </div>
+        <div class="row">
+            <div class="col-6 col-md-6"></div>               
+            <div class="col-6 col-md-6" style="text-align: left;">Intranet web forum</div>
+        </div>
+        <div class="row">
+            <div class="col-6 col-md-6" style="text-align: end;">
+                <b>Description:</b>
+            </div>
+            <div class="col-6 col-md-6"></div>
+        </div>
+        <div class="row">
+            <div class="col-6 col-md-6"></div>               
+            <div class="col-6 col-md-6" style="text-align: left;">
+                Developed an Intranet web forum application at ISAC<br>
+                Technologies used: Struts2, Java
+            </div>
+        </div>
+        <input type="text" id="iwfe" onkeydown="iwfexit(this)" placeholder=":press q to exit"/>
     </div>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
