@@ -52,39 +52,46 @@ function showiwf(){
     setTimeout(function(){ document.getElementById('iwf').scrollIntoView({behavior: "smooth"}); }, 300);
 }
 
-function bsexit(ele) {
-    if(event.key === 'Enter') {
+$('#bse').on('input', function(){
+    console.log('yes');
+    if($('#bse').val()=="q"){
         $('#bs').hide();
         $('.all').show();
     }
-}
-function ccexit(ele) {
-    if(event.key === 'Enter') {
+});
+
+
+$('#cce').on('input', function(){
+    console.log('yes');
+    if($('#cce').val()=="q"){
         $('#cc').hide();
         $('.all').show();
     }
-}
-
-function gpexit(ele) {
-    if(event.key === 'Enter') {
+});
+$('#gpe').on('input', function(){
+    console.log('yes');
+    if($('#gpe').val()=="q"){
         $('#gp').hide();
         $('.all').show();
     }
-}
-function iwfexit(ele) {
-    if(event.key === 'Enter') {
-        $('#iwf').hide();
-        $('.all').show();
-    }
-}
+});
 
-function fhexit(ele) {
-    if(event.key === 'Enter') {
+$('#fhe').on('input', function(){
+    console.log('yes');
+    if($('#fhe').val()=="q"){
         $('#fh').hide();
         $('.all').show();
     }
-}
+});
 
+
+$('#iwfe').on('input', function(){
+    console.log('yes');
+    if($('#iwfe').val()=="q"){
+        $('#iwf').hide();
+        $('.all').show();
+    }
+});
 $('#aboutmeLink').on('click', function(){
     $('#aboutmeCollapse').collapse('toggle');
     setTimeout(function(){ document.getElementById('aboutmeDiv').scrollIntoView({behavior: "smooth"}); }, 300);
